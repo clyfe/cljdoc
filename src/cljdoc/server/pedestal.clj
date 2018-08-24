@@ -316,9 +316,6 @@
 
   (http/stop s)
 
-  (clojure.pprint/pprint
-   (routes {:grimoire-store gs}))
-
   (require 'io.pedestal.test)
 
   (io.pedestal.test/response-for (:io.pedestal.http/service-fn s) :post "/api/request-build2")
